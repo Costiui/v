@@ -1,0 +1,235 @@
+#kiwi .toolbar .panellist .alert_action,#kiwi {
+    /*background: url(background-light.png) left top repeat-x #E3E3E3;*/
+    background: #fff;
+    color: #666;
+}
+#kiwi{font-family:'Maven Pro',sans-serif;font-size:18px;font-weight:800;background:#f7f7f7}
+#kiwi .loader{background:url(loader.gif) no-repeat;width:43px;height:11px;display:inline-block}
+#kiwi button{border:none;cursor:pointer;display:block;font-size:1em;font-weight:800;padding:12px 10px;color:#ffffff;border-radius:4px;text-shadow:-1px -1px 0 rgba(0,0,0,.5);background: #ee5f00;)}
+#kiwi input{font-family:Maven Pro,sans-serif;font-size:1em;font-weight:800;border:3px solid #a8a7a8;border-radius:4px;color:#686868;background-color:#fff;padding:8px 15px}
+#kiwi select{font-family:Maven Pro,sans-serif;font-size:1em;font-weight:800;border:3px solid #a8a7a8;border-radius:4px;color:#686868;background-color:#f7f7f7;padding:8px 15px}
+
+#kiwi .toolbar{
+    background-image: url(paper.png);
+    font-size:0.96em;
+    box-shadow:0 0 10px rgba(50,50,50,.8);
+    z-index:1;vertical-algin:top;
+    width:100%;
+}
+
+#kiwi .controlbox{background-color:#fff;border:1px solid #ddd}
+
+#kiwi .toolbar .connections{
+    list-style:none;
+    overflow-x:auto;
+    display:inline-block;
+}
+
+
+#kiwi .toolbar .panellist{color:#a5a5a5;display:inline-block}
+#kiwi .toolbar .panellist.applets{display:inline-block}
+
+#kiwi .toolbar .panellist li{
+    vertical-align:middle;
+    display: list-item;
+    float: left;
+    background-image: url(x.jpg);
+    border-top:4px solid #57ace3;
+    color:#fff900;
+    padding:0 5px;
+    line-height:1.6em;
+    height:35px;
+    border-radius: 2px;
+}
+#kiwi .toolbar .panellist .alert_highlight { font-weight:normal; }
+#kiwi .toolbar .panellist .alert_activity { font-weight:800; }
+#kiwi .toolbar .panellist .alert_action { font-weight:normal; }
+#kiwi .toolbar .panellist .active{border-top:4px solid #FF9800;color:#ffffff;border-bottom:none;padding-right:35px;border-radius: 2px;}
+#kiwi .toolbar .panellist li .part:before{font-family:FontAwesome;content:"\f057";color:#ffffff;padding-left:2px;padding-right:2px;border-radius:2px;line-height:2em}
+#kiwi .toolbar .panellist li .part:hover:before{color:#fff}
+#kiwi .toolbar .panellist li.server span{padding-top:0;font-family:'Maven Pro',sans-serif}
+#kiwi.connected .toolbar .panellist li.server:before{content:"";width:32px;height:32px;display:inline-block;position:relative;top:1px;margin-right:-1px;background:url(sprite-ajax.png) -7px 0}
+#kiwi .toolbar .panellist li.server:before{content:"\f06a";color:#900;font-size:1.5em;line-height:1em;vertical-align:middle}
+#kiwi .toolbar .panellist li span{line-height:20px;vertical-align:middle;display:inline-block}
+#kiwi .toolbar .panellist li.active .activity{display:none}
+#kiwi .toolbar .panellist li .activity.zero{visibility:hidden}
+#kiwi .toolbar .panellist li .activity{margin-left:1em;border-radius:4px;color:#fff;font-weight:800;background-color:#ff9800;text-align:center;font-size:10px;display:inline-block;width:2em;line-height:1.9em}
+#kiwi .toolbar .panellist li.alert_highlight .activity{color:#fff;background:#1d75e9}
+#kiwi .status_message{background-color:#57216f;color:#fff;padding:.9em;text-align:center;font-size:1.1em;-webkit-box-shadow:0 0 13px 0 rgba(0,0,0,.6);-moz-box-shadow:0 0 13px 0 rgba(0,0,0,.6);box-shadow:0 0 13px 0 rgba(0,0,0,.6)}
+#kiwi .status_message.err{color:#D8000C;background:#FFBABA}
+#kiwi .channel_tools{margin-bottom:10px;padding:0 5%;background-color:#111;color:#fff;overflow:hidden;display:block;height:40px}
+#kiwi .channel_tools i{width:30%;font-size:1.6em;display:inline-block;height:40px;line-height:10em;background:url(sprite-ajax.png) top left no-repeat}
+#kiwi .channel_tools i.channel_info{background-position:10px -157px}
+#kiwi .channel_tools i.channel_part{background-position:9px -117px}
+#kiwi .channel_tools i.right-bar-toggle-inner{background-position:10px -79px}
+#kiwi .right-bar-toggle{display:block;overflow:hidden;width:40px;height:40px;color:#f4f5f9;background-color:#1084e6;border:3px solid #f4f5f9;-webkit-box-shadow:0 0 13px 0 rgba(0,0,0,.6);-moz-box-shadow:0 0 13px 0 rgba(0,0,0,.6);box-shadow:0 0 13px 0 rgba(0,0,0,.6)}
+#kiwi .right-bar-toggle i{display:inline-block;width:40px;height:40px;overflow:hidden;line-height:10em;background:url(sprite-ajax.png) 0 -81px no-repeat}
+#kiwi .messages{color:#4c6d91;background-color:#d9dbdf}
+#kiwi .messages a{text-decoration:none;color:#1084E6}
+#kiwi .messages .msg{font-size:.9em;background-color:#d9dbdf; margin-bottom:10px;}
+#kiwi .messages .msg .time{width:6em;float:left;color:#777;padding:5px;display:none}
+#kiwi .messages .msg .nick{width:11em;float:left;text-align:right;padding:0px;overflow:hidden;font-size:1.0em;font-weight: bold}
+#kiwi .messages .msg .text{display:block;margin-left:12em;white-space:pre-wrap;word-wrap:break-word;padding:5px;background-color:#f6f7f8;color:#254b6a;border: 2px solid #F9F9F9;box-shadow: 1px 1px 3px rgba(0,0,0,.35);}
+#kiwi .messages .msg.privmsg .text{background-color:#f6f7f8;color:#254b6a;margin-top:10px;margin-right:10px;border-right:2px solid silver}
+#kiwi .messages .msg.privmsg .text:before{display:inline-block;width:15px;height:11px;position:relative;margin-left:-20px;margin-right:10px;content:"";background:url(sprite-ajax.png) right -50px}
+#kiwi .messages .msg.privmsg.repeated_nick .text{margin-top:10px;border-right:2px solid silver}
+#kiwi .messages .msg.privmsg.repeated_nick .text:before{background:0 0}
+#kiwi .messages .msg.action .nick{color:#d9dbdf}
+#kiwi .messages .msg.action .text{color:#1084e6;background-color:#bbd3c1;font-style:italic;margin-top: 10px; margin-right: 10px;border-right: 2px solid #bbd3c1;}
+#kiwi .messages .msg.action.join,
+#kiwi .messages .msg.action.kick .text,
+#kiwi .messages .msg.action.part .text,
+#kiwi .messages .msg.action.quit .text{color:#a02c08;background-color:#d9dbdf}
+#kiwi .messages .msg.status .text{border-left:none;font-weight:800;background-color:#e61046;color:#fff}
+#kiwi .messages .msg.topic{margin:10px;border:0 solid silver;border-radius:5px;padding:10px;background-color:#f6f7f8;color:#254b6a;text-align:center}
+#kiwi .messages .msg.topic .nick,
+#kiwi .messages .msg.topic .time{display:none}
+#kiwi .messages .msg.topic .text{color:#090;margin-left:0;border:none}
+#kiwi .messages .msg.motd{border:none}
+#kiwi .messages .msg.motd .text{color:#254b6a}
+#kiwi .messages .msg.whois .nick{font-weight:800}
+#kiwi .messages .msg.whois .text{margin-left:12em;padding-left:1em;border-left:1px dashed #999;background-color:#1565c0;color:#fff;border-left: 5px solid #ff9800;border-radius: 0px}
+#kiwi .messages .msg.whois .text a{color:#fff}
+#kiwi .messages .msg.error .text{background-color:#ed2424;color:#fff;padding:.5em;margin-top:1em;margin-bottom:1em;margin-right:2em}
+#kiwi.timestamps .messages .msg .time{display:block;color:#4c6d91}
+#kiwi.timestamps .messages .msg .text{margin-left:18em}
+#kiwi .messages .msg.global_nick_highlight,
+#kiwi .messages .msg.highlight{transition:background .3s;background:#d9dbdf}
+#kiwi .messages .msg.repeated_nick .nick{visibility:hidden}
+#kiwi.narrow .messages .msg .time{display:none}
+#kiwi.narrow .messages .msg .nick{background:url(sprite-ajax.png) 0 -526px no-repeat;display:block;float:none;text-align:left;padding:0 0 4px 27px;margin:10px 0 0;border-radius:4px 4px 0 0}
+#kiwi.narrow .messages .msg .text{display:block;white-space:pre-wrap;word-wrap:break-word;margin:0;padding:5px}
+#kiwi.narrow .messages .msg.repeated_nick .nick{display:none}
+#kiwi .messages .msg .media{margin-left:.5em}
+#kiwi .messages .msg .media .media_close{font-size:.9em}
+#kiwi .messages .msg .media .media_content{margin:10px 0 0 10px;overflow:hidden}
+#kiwi .messages .msg .media .media_content img{padding:3px;border:1px solid gray}
+#kiwi .messages .msg .media .media_content>.content{background:#fff;overflow:hidden;padding:10px;border:1px solid #DDD;border-top-color:#EEE;border-bottom-color:#BBB;-webkit-box-shadow:0 1px 3px rgba(0,0,0,.15);-moz-box-shadow:0 1px 3px rgba(0,0,0,.15);box-shadow:0 1px 3px rgba(0,0,0,.15);border-radius:5px;float:left}
+#kiwi .messages .msg .media.twitter .media_content>.content{background:0 0;border:none;overflow:hidden;box-shadow:none;padding:0}
+#kiwi .messages .msg .media.reddit .thumbnail_nsfw{display:inline-block;float:left}
+#kiwi .messages .msg .media.reddit .thumbnail{float:left;margin-right:.5em}
+#kiwi .messages .last_seen{border-bottom-color:#B0CF82}
+#kiwi .right_bar{background-color:#32394a;-webkit-box-shadow:inset 10px 0 10px -7px rgba(0,0,0,.5);-moz-box-shadow:inset 10px 0 10px -7px rgba(0,0,0,.5);box-shadow:inset 10px 0 10px -7px rgba(0,0,0,.5)}
+#kiwi.narrow .right_bar{width:100%}
+#kiwi.narrow .right_bar.disabled{width:0}
+#kiwi .memberlists .meta{font-size:.8em;padding-bottom:5px;padding-top:5px;text-align:center;background-image: url(x.jpg);color:#ffffff;-webkit-box-shadow:inset 10px 0 10px -7px rgba(0,0,0,.5);-moz-box-shadow:inset 10px 0 10px -7px rgba(0,0,0,.5);box-shadow:inset 10px 0 10px -7px rgba(0,0,0,.5);font-weight: bold;}
+#kiwi .memberlists ul{list-style:none}
+#kiwi .memberlists ul li{padding-top:8px;padding-bottom:8px;padding-left:0.4em;border-bottom:1px solid #32394a;font-size:0.9em}
+#kiwi.narrow .memberlists ul li{padding:.5em 1em;border-bottom:1px solid #3d4351}
+#kiwi.touch .memberlists ul li{padding:1em .5em}
+#kiwi .memberlists ul li:hover{border-left:8px solid #FF9800;-webkit-transition:.2s ease;-moz-transition:.2s ease;-ms-transition:.2s ease;-o-transition:.2s ease;transition:.2s ease;background-color:#434a5e}
+#kiwi .memberlists ul li a.nick{display:block;color:#fff}
+#kiwi .userbox{margin:4px 1em 5px;padding-bottom:.7em;font-size:.9em}
+#kiwi .userbox a{display:block;text-decoration:none;margin-bottom:2px;color:#1565c0;padding-top:10px;padding-bottom:10px;border-bottom: 0px;}
+#kiwi .userbox a i{font-size:1.1em;margin-right:5px}
+#kiwi .memberlists ul li .prefix{display:none;width:20px;height:20px;border-radius:4px;margin:0 8px 0 0;font-size:12px;font-weight:800;padding-top:2px;text-align:center;color:#E3E3E3;vertical-align:middle}
+#kiwi .memberlists ul li.mode.v .prefix{display:inline-block;background-image:url('/kiwi/assets/img/v.png');width:14px;height:15px;font-size: 0px;vertical-align: text-bottom;margin:0px;background-repeat: no-repeat;}
+#kiwi .memberlists ul li.mode.h .prefix{display:inline-block;background-image:url('/kiwi/assets/img/o.png');width:14px;height:14px;font-size: 0px;vertical-align: text-bottom;margin:0px;background-repeat: no-repeat;}
+#kiwi .memberlists ul li.mode.o .prefix{display:inline-block;background-image:url('/kiwi/assets/img/o.png');width:14px;height:14px;font-size: 0px;vertical-align: text-bottom;margin:0px;background-repeat: no-repeat;}
+#kiwi .memberlists ul li.mode.a .prefix{display:inline-block;background-image:url('/kiwi/assets/img/o.png');width:14px;height:14px;font-size: 0px;vertical-align: text-bottom;margin:0px;background-repeat: no-repeat;}
+#kiwi .memberlists ul li.mode.q .prefix{display:inline-block;background-image:url('/kiwi/assets/img/q.png');width:14px;height:14px;font-size: 0px;vertical-align: text-bottom;margin:0px;background-repeat: no-repeat;}
+#kiwi .memberlists ul li.mode .prefix{display:inline-block;background-image:url('/kiwi/assets/img/k.png');width:15px;height:14px;font-size: 0px;vertical-align: text-bottom;margin:0px;background-repeat: no-repeat;padding-left: 0.2cm;}
+#kiwi .memberlists ul{margin-left: 5px;}
+#kiwi .memberlists ul.active{}
+#kiwi .controlbox .input{height:1.9em}
+#kiwi .controlbox .input .nick a{text-decoration:none;color:#000}
+#kiwi .controlbox .input .nick{text-align:right;width:11em;left:0;position:absolute;overflow:hidden;border-right:1px solid #ddd;padding:8px .5em 2px 2px;color:#5d6572;background:url(sprite-ajax.png) 0 -446px no-repeat;height:25px}
+#kiwi.narrow .controlbox .input .nick{display:none}
+#kiwi.narrow .controlbox .input .input_wrap{left:7px}
+#kiwi .controlbox .input .input_wrap{position:absolute;right:7px;left:12.2em;height:1.7em}
+#kiwi .controlbox .input .inp{line-height:1.5em;border:none;box-shadow:none;border-radius:0;outline:0;resize:none;overflow:hidden;position:relative;height:100%;width:100%;display:block;font-size:1.3em;colot:#383838;font-family:'Maven Pro',sans-serif}
+#kiwi .controlbox .nickchange{padding:10px;left:0;background-image: url(x.jpg);color:#fff;-webkit-box-shadow:0 0 27px 0 rgba(0,0,0,.61);-moz-box-shadow:0 0 27px 0 rgba(0,0,0,.61);box-shadow:0 0 27px 0 rgba(0,0,0,.61);border-top: 4px solid #ff9800}
+#kiwi .controlbox .nickchange a{color:#eaeaea;text-shadow:-1px -1px 0 rgba(0,0,0,.5)}
+#kiwi .controlbox .nickchange input{padding:.2em .5em;margin-left:.5em;width:140px;font-size:1.1em;font-family:'Maven Pro',sans-serif}
+#kiwi .controlbox .nickchange button{padding:.5em;display:inline-block;width:auto;    font-family: 'Maven Pro',sans-serif}
+#kiwi .toolbar .topic{background-color:#f7f7f7}
+#kiwi .toolbar .topic div{padding:.2em 1em;text-align:center;box-shadow:none;border-radius:0;background-color:#f7f7f7;height:1.5em;overflow:hidden;outline:0;white-space:nowrap;color:#686869}
+#kiwi .toolbar .topic:hover div{min-height:1.5em;white-space:pre-wrap;word-wrap:break-word;overflow:visible;background-color:#fff;z-index:10;height:auto;bottom:auto;box-shadow:0 5px 5px rgba(255,255,255,.35) inset,0 1px 3px rgba(0,0,0,.5)}
+#kiwi .toolbar .app_tools {
+	width: 150px;
+	text-align: center;
+	color: #57ace3;
+	margin-top:5px;
+}
+#kiwi.narrow .toolbar .tabs { margin-right:0; }
+#kiwi.narrow .toolbar .app_tools { width:auto; }
+#kiwi .toolbar .app_tools ul li {
+    font-size:36px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-left:10px;
+
+}
+#kiwi .toolbar .app_tools ul li:hover {
+	color: #FF6600;
+}
+#kiwi .toolbar .app_tools img { }
+
+#kiwi .server_select{margin-left:auto;margin-right:auto}
+#kiwi .server_select .more{display:none;width:270px;margin:0 auto}
+#kiwi .server_select table tr td{padding:5px}
+#kiwi .server_select button{padding:.5em 1em;font-size:1.1em;width:155px;margin:8px auto;display:block}
+#kiwi .server_select input{padding:3px 7px;width:100px}
+#kiwi .server_select br{clear:both}
+#kiwi .server_select .basic input,.server_select .basic button{font-size:1em;padding:.5em 2.4em}
+#kiwi .server_select .basic input{width:152px}
+#kiwi .server_select .basic label{font-size:1.3em;margin-top:4px}
+#kiwi .server_select .basic tr.have_key,
+#kiwi .server_select .basic tr.have_pass{font-size:.8em}
+#kiwi .server_select .basic table tr.channel,
+#kiwi .server_select .basic table tr.pass,
+#kiwi .server_select .basic table tr.have_pass { display:none; }
+#kiwi .server_select .basic table tr.key,
+#kiwi .server_select .basic table tr.have_key { display:none; }
+#kiwi .server_select .basic .show_more { display:none !important; }
+#kiwi .server_select.single_server .basic { border:none; }
+#kiwi .server_select .status { text-align: center; font-weight: bold; padding: 0.01em; margin-top: 1.4em; margin-bottom: 0.1em; margin-right: 0em;border: none; }
+#kiwi .server_select .status.ok { }
+#kiwi .server_select .status.error {background-color:#FF5722;color:#fff;padding:0.01em;margin-top:1.4em;margin-bottom:0.1em;margin-right:0em;border:none}
+#kiwi .server_select .show_server{background:url(loader.gif) no-repeat;width:43px;height:11px;display:inline-block;overflow:hidden;line-height:10em;margin-left:10px}
+#kiwi .server_select .kiwi_logo{margin-top:30px}
+#kiwi .server_select .kiwi_logo h1 span{font-size:14px;line-height:24px;vertical-align:middle;color:#555}
+#kiwi .server_select .kiwi_logo img{display:inline;width:24px}
+#kiwi.chanlist_treeview .panels{left:160px}
+#kiwi.chanlist_treeview .toolbar{position:static}
+#kiwi.chanlist_treeview .toolbar .app_tools{float:none}
+#kiwi.chanlist_treeview .toolbar>div{margin-left:160px}
+#kiwi.chanlist_treeview .toolbar .tabs{position:absolute;left:0;bottom:0;top:0;margin:0;width:160px;overflow-y:auto;background-color:#333;color:#ff9800}
+#kiwi.chanlist_treeview .toolbar .panellist{float:none;margin-right:5px;width:150px;display:block;border:0}
+#kiwi.chanlist_treeview .toolbar .connections{overflow:visible}
+#kiwi.chanlist_treeview .tabs ul li{display:block;float:none}
+#kiwi.chanlist_treeview .tabs ul li .activity{position:absolute;right:5px;top:12px}
+#kiwi.chanlist_treeview .toolbar .panellist li{border:0}
+#kiwi.chanlist_treeview .toolbar .panellist .active{padding-left:6px;padding-right:23px;border:none;border-left:6px solid #1084E6}
+#kiwi.chanlist_treeview .tabs ul li.active{margin-right:0;border-right-width:0}
+#kiwi .applet_chanlist{margin:.5em 1em}
+#kiwi .applet_chanlist table{border-collapse:collapse;width:100%}
+#kiwi .applet_chanlist thead{text-align:center}
+#kiwi .applet_chanlist tbody td{border:1px solid #C4C4C4;padding:.3em 1em}
+#kiwi .applet_chanlist .chanlist_name,
+#kiwi .applet_chanlist .chanlist_num_users{border-width:0 1px 0 0}
+#kiwi .applet_chanlist .chanlist_topic{border-width:0}
+#kiwi .applet_chanlist tr:nth-child(even){background:#ffffff}
+#kiwi .applet>div.settings button.save{padding:1em 2em;border:1px solid gray;border-radius:3px}
+#kiwi .applet>div.settings tr{border-bottom:1px dashed #000}
+#kiwi .applet>div.settings td.label{font-weight:700}
+#kiwi .applet>div.settings tr.save{text-align:right}
+#kiwi .ui_menu{border-radius:3px;color:#fff;box-shadow:0 3px 8px rgba(0,0,0,.25)}
+#kiwi .ui_menu .ui_menu_title{border-top-left-radius:3px;border-top-right-radius:3px}
+#kiwi .ui_menu .ui_menu_content.hover:hover{background:#f7f7f7}
+#kiwi .ui_menu .ui_menu_foot{border-bottom-left-radius:3px;border-bottom-right-radius:3px}
+#kiwi .ui_menu .ui_menu_foot .close{float:right;font-size:.9em;margin-right:1em;color:#999}
+#kiwi .ui_menu .ui_menu_foot .close:hover{color:#222}
+#kiwi .ui_menu .ui_menu_content {color: #5d6572;}
+#kiwi .channel_info .channel_url{display:block;margin:5px 1em;font-style:italic}
+#kiwi .channel_info .channel-banlist table{margin-top:10px;border-spacing:10px 3px}
+#kiwi .channel_info .channel-banlist thead{font-style:italic}
+#kiwi .channel_info .remove-ban:hover{color:#900}
+#kiwi .notification{max-height:0;overflow:hidden;-webkit-transition:max-height 1s;-moz-transition:max-height 1s;transition:max-height 1s;display:block;color:#ffffff;text-shadow:0 -1px #000;background:rgba(65,65,65,.95);background-clip:padding-box;border:1px solid;border-color:rgba(17,17,17,.6) rgba(17,17,17,.7) rgba(17,17,17,.9);border-radius:5px;background-image:-webkit-linear-gradient(top,rgba(242,242,242,.3),rgba(221,221,221,.01) 50%,rgba(0,0,0,.12) 50%,rgba(0,0,0,.3));background-image:-moz-linear-gradient(top,rgba(242,242,242,.3),rgba(221,221,221,.01) 50%,rgba(0,0,0,.12) 50%,rgba(0,0,0,.3));background-image:-o-linear-gradient(top,rgba(242,242,242,.3),rgba(221,221,221,.01) 50%,rgba(0,0,0,.12) 50%,rgba(0,0,0,.3));background-image:linear-gradient(to bottom,rgba(242,242,242,.3),rgba(221,221,221,.01) 50%,rgba(0,0,0,.12) 50%,rgba(0,0,0,.3));-webkit-box-shadow:inset 0 0 1px rgba(255,255,255,.5),0 1px 2px rgba(0,0,0,.3);box-shadow:inset 0 0 1px rgba(255,255,255,.5),0 1px 2px rgba(0,0,0,.3)}
+#kiwi .notification.show{max-height:500px}
+#kiwi .notification .close{font-size:16px;border:1px solid #1b1b1b;border-left,border-bottom:none;border-radius:0 8px 0 0;line-height:20px;text-align:center;color:#747474;background-image:-webkit-linear-gradient(top,#383838,#111);background-image:-moz-linear-gradient(top,#383838,#111);background-image:-o-linear-gradient(top,#383838,#111);background-image:linear-gradient(to bottom,#383838,#111);-webkit-box-shadow:inset 0 1px rgba(255,255,255,.15);box-shadow:inset 0 1px rgba(255,255,255,.15)}
+#kiwi .notification .close:hover{color:#ffffff}
+#kiwi .panel_container{background-color:#d9dbdf}
+
+
